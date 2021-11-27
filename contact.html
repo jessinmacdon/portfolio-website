@@ -13,8 +13,8 @@
   </head>
   <body>
     <header class="page-header">
-        <img src="img/logo.svg" class="page-header__item" id="logo-desktop" alt="logo with name Macdon Jessin in block letters." width="250px" height="70px">
-        <img src="img/logo-small.svg" class="page-header__item" id="logo-mobile" alt="logo which is a picture of a screw bar" width="100px" height="70px">
+      <img src="img/logo.svg" class="page-header__item" id="logo-desktop" alt="logo with name Macdon Jessin in block letters." width="250px" height="70px">
+      <img src="img/logo-small.svg" class="page-header__item" id="logo-mobile" alt="logo which is a picture of a screw bar" width="100px" height="70px">
       <nav class="page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -27,68 +27,62 @@
             <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
+            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-        <div class="contact-page">
-          <h1>Contact Me</h1>
-          <form action="" method="post" id="contactform">
-            <label class="standard-label" for="contact-email">
-              Email:
-            </label><br>
-            <input type="email" id="contact-email" required="required"><br>
-            <br>
-            <label class="standard-label" for="telephone-number">
-              Telephone:
-            </label><br>
-            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone-number" required="required"><br>
-            <br>
-            <label class="standard-label" for="text-input">
-              Message:
-            </label><br>
-            <textarea maxlength="240" id="text-input" required="required"></textarea><br>
-            <br>
-          </form>
-          <button type="submit" form="contactform" value="Submit" class="submit-form">Send message</button>
-          <p>
-            Macdon Jessin O'malle
-          </p>
-          <p>
-            Huttenstraße 25,
-            10553 Berlin
-            Deutschland
-          </p>
-          <p>
-            Tel: <a href="tel:+4917632271138" aria-label="You can reach me on phone through this number">+49 176 32271138</a>
-          </p>
-          <a href="https://www.linkedin.com/in/jessinmacdon" target="_blank" aria-label="click here to have a look at my LinkedIn profile">linkedIn</a>
-          <p>
-            Skype: <a href="skype:live:.cid.2b6d6e37bcc25660" target="_blank" aria-label="For more information about me, please feel free to text or call me on skype">@jessinmacdon</a><br>
-          </p>
-          <p>
-            Email: <a href="mailto:jessinmacdon@gmail.com?cc=macdonjessinomalle@gmail.com&?subject=Your%20Dev%20Portfolio&body=Hello%20Jessin%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20on%20the%20web%20and%20found%20your%20previous%20projects%20very%20interesting.%0D%0A%0D%0AI%20would%20like%20to%20know%20more%20about%20you.%20I%20am%20working%20on%20a%20project%20which%20I%20think%20will%20tickle%20your%20interest.%0D%0A%0D%0AWould%20you%20have%20some%20time%20this%20week%20to%20meet%20and%20discuss%20this%3F%0D%0A%0D%0AUntil%20then%20have%20a%20nice%20week%20and%20I%20look%20forward%20to%20your%20reply.%0D%0A%0D%0ABest%20regards%2C%0D%0A">jessinmacdon(at)gmail(dot)com</a>
-          </p>
+      <div>
+        <h1>Contact Me</h1>
+      </div>
+      <h1>Contact Me</h1>
+      <form action="" method="post" class="form" id="contactform">
+        <div class="personla-info-contactform">
+          <input type="text" id="contact-name" for="full-name" placeholder="Name" required="required">
+          <input type="email" id="contact-email" for="contact-email" placeholder="Email address" required="required">
+          <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone-number" for="telephone-number" placeholder="Telephone number" required="required">
         </div>
-    </main>
-    <footer class="footer">
-      <div class="footer__item">
-        <p>Find me on</p>
-      </div>
-      <div class="footer__item">
-        <a href="https://twitter.com/jessinmacdon" class="social-media__link" target="_blank" aria-label="get to know more about my interest and tweets">
-          <img src="img/twitter-icon.svg" alt="twitter.com logo icon" width="30px" height="30px">
-        </a>
-        <a href="https://www.xing.com/profile/jessinmacdon" class="social-media__link" target="_blank" aria-label="click here to have a look at my Xing.de profile">
-          <img src="img/xing-icon.svg" alt="xing.de logo icon" width="30px" height="30px">
-        </a>
-        <a href="https://www.linkedin.com/in/jessinmacdon" class="social-media__link" target="_blank" aria-label="click here to have a look at my LinkedIn profile">
-          <img src="img/linkedin-icon.svg" alt="linkedIn logo icon" width="30px" height="30px">
-        </a>
-      </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
+        <div class="contact-text">
+          <textarea name="message" maxlength="240" id="text-input" placeholder="Message" required="required"></textarea>
+        </div>
+        <input type="submit" form="contactform" value="Submit" id="input-submit">
+      </form>
+      <p>
+        Macdon Jessin O'malle
+      </p>
+      <p>
+        Huttenstraße 25,
+        10553 Berlin
+        Deutschland
+      </p>
+      <p>
+        Tel: <a href="tel:+4917632271138" aria-label="You can reach me on phone through this number">+49 176 32271138</a>
+      </p>
+      <a href="https://www.linkedin.com/in/jessinmacdon" target="_blank" aria-label="click here to have a look at my LinkedIn profile">linkedIn</a>
+      <p>
+        Skype: <a href="skype:live:.cid.2b6d6e37bcc25660" target="_blank" aria-label="For more information about me, please feel free to text or call me on skype">@jessinmacdon</a><br>
+      </p>
+      <p>
+        Email: <a href="mailto:jessinmacdon@gmail.com?cc=macdonjessinomalle@gmail.com&?subject=Your%20Dev%20Portfolio&body=Hello%20Jessin%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20on%20the%20web%20and%20found%20your%20previous%20projects%20very%20interesting.%0D%0A%0D%0AI%20would%20like%20to%20know%20more%20about%20you.%20I%20am%20working%20on%20a%20project%20which%20I%20think%20will%20tickle%20your%20interest.%0D%0A%0D%0AWould%20you%20have%20some%20time%20this%20week%20to%20meet%20and%20discuss%20this%3F%0D%0A%0D%0AUntil%20then%20have%20a%20nice%20week%20and%20I%20look%20forward%20to%20your%20reply.%0D%0A%0D%0ABest%20regards%2C%0D%0A">jessinmacdon(at)gmail(dot)com</a>
+      </p>
+  </main>
+  <footer class="footer">
+    <div class="footer__item">
+      <p>Find me on</p>
+    </div>
+    <div class="footer__item">
+      <a href="https://twitter.com/jessinmacdon" class="social-media__link" target="_blank" aria-label="get to know more about my interest and tweets">
+        <img src="img/twitter-icon.svg" alt="twitter" width="30px" height="30px">
+      </a>
+      <a href="https://www.xing.com/profile/jessinmacdon" class="social-media__link" target="_blank" aria-label="click here to have a look at my Xing.de profile">
+        <img src="img/xing-icon.svg" alt="Xing" width="30px" height="30px">
+      </a>
+      <a href="https://www.linkedin.com/in/jessinmacdon" class="social-media__link" target="_blank" aria-label="click here to have a look at my LinkedIn profile">
+        <img src="img/linkedin-icon.svg" alt="LinkedIn" width="30px" height="30px">
+      </a>
+    </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
   </body>
 </html>
