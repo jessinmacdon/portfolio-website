@@ -289,14 +289,16 @@ td {
   animation: 30s cloud-move-reverse infinite alternate linear;
 }
 
-.contact-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 700px;
-  min-height: 100%;
-  margin: auto;
-  padding-bottom: 10%;
+form #contactform {
+ width: 550px;
+ height: 700px;
+ margin-left: 750px;
+ position: relative;
+}
+
+input {
+  Width: 300px;
+  height: 30px;
 }
 
 .grid {
