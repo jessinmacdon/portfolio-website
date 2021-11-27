@@ -84,8 +84,7 @@ a:hover,
 }
 
 a:active {
-  color: var(--a-active);
-  text-decoration: none;
+  color: var(--a-visited);
 }
 
 button,
