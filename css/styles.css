@@ -24,7 +24,7 @@ a:active color: #489c79;
   --h2-size: 24px;
   --h2-weight: 700;
   --h3-size: 18px;
-  --h3-weight:700px;
+  --h3-weight: 700px;
   --a-color: #533419;
   --a-visited: #05676e;
   --a-active: black;
@@ -40,7 +40,7 @@ a:active color: #489c79;
   box-sizing: border-box;
 }
 
-html, body {
+html body {
   /* primary color and font for the body */
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@ html, body {
 
 h1 {
   font-size: var(--h1-size);
-  font-weight: var(--h1-size);
+  font-weight: var(--h1-weight);
 }
 
 h2 {
@@ -80,7 +80,7 @@ a:hover,
 :focus {
   color: var(--a-hover);
   text-decoration: none;
-  transition: 0.8s
+  transition: 0.8s;
 }
 
 a:active {
@@ -89,7 +89,7 @@ a:active {
 
 button,
 .button {
-  /*button including transition properties - applied to all primary buttons*/
+  /* button including transition properties - applied to all primary buttons */
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -106,7 +106,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  /*effect applied to all buttons*/
+  /* effect applied to all buttons */
   cursor: pointer;
   opacity: 0.8;
 }
@@ -122,11 +122,12 @@ button:focus,
   height: 75px;
   padding-left: 30px;
   padding-right: 30px;
-  top: 0px;
+  top: 0;
   bottom: 10px;
   border-bottom: 2px solid black;
   background-color: var(--header-footer-color);
   position: fixed;
+  z-index: 1;
 }
 
 .page-header__item {
@@ -137,7 +138,6 @@ button:focus,
 #logo-mobile {
   display: none;
 }
-
 
 .page-header__item:last-child {
   text-align: right;
@@ -157,7 +157,7 @@ button:focus,
 main {
   /* header and footer padding */
   padding-top: 100px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 footer {
@@ -175,28 +175,28 @@ footer {
   float: left;
   width: 250px;
   margin-right: 40px;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .profile {
   /* profile on the home page including the profile picture and short introductory text */
   max-width: 550px;
   height: 100%;
-  margin: auto auto;
+  margin: auto;
 }
 
 .introduction {
-  /* introductory text - about me page*/
+  /* introductory text - about me page */
   width: 700px;
-  margin: auto auto;
+  margin: auto;
 }
 
 .introduction__item {
-  /* introduction text - about me page*/
+  /* introduction text - about me page */
   display: inline-block;
   width: 100%;
   padding: 20px;
-  background-color: Var(--primary-background-color);
+  background-color: var(--primary-background-color);
   text-align: center;
 }
 
@@ -212,7 +212,7 @@ footer {
 }
 
 table {
-  border-spacing: 0px;
+  border-spacing: 0;
   table-layout: fixed;
   margin-left: auto;
   margin-right: auto;
@@ -232,7 +232,7 @@ td {
 }
 
 .download-cv {
-  /*introduction text - about me page*/
+  /* introduction text - about me page */
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -248,11 +248,13 @@ td {
 
 @keyframes color-change {
   0% {
-    fill: #ffffff;
+    fill: #fff;
   }
+
   50% {
     fill: yellow;
   }
+
   100% {
     fill: #8a0707;
   }
@@ -266,6 +268,7 @@ td {
   from {
     transform: translate(0, 60px);
   }
+
   to {
     transform: translate(200px, 60px);
   }
@@ -277,8 +280,9 @@ td {
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(400px, 40px)
+    transform: translate(400px, 40px);
   }
+
   to {
     transform: translate(300px, 40px);
   }
@@ -305,7 +309,7 @@ td {
 .grid-heading {
   /* grid heading "My work" */
   display: block;
-  margin: 0px
+  margin: 0;
 }
 
 .grid-heading__item {
@@ -343,7 +347,7 @@ td {
 }
 
 @media all and (max-width: 500px) {
-  /* to support smaller screen resolutions (mobile phones, less than 500px)*/
+  /* to support smaller screen resolutions (mobile phones, less than 500px) */
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -351,14 +355,14 @@ td {
 }
 
 @media all and (min-width: 500px) and (max-width: 760px) {
-  /* to support smaller screen resolutions (mobile phones, less than 750px)*/
+  /* to support smaller screen resolutions (mobile phones, less than 750px) */
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (min-width: 0px) and (max-width: 760px) {
-  /* to support smaller screen resolutions (mobile phones, less than 750px)*/
+@media all and (min-width: 0) and (max-width: 760px) {
+  /* to support smaller screen resolutions (mobile phones, less than 750px) */
   .grid {
     grid-gap: 10px;
     padding-bottom: 40%;
@@ -366,7 +370,7 @@ td {
   }
 
   .grid-heading {
-    font-size: var(--media-h1)
+    font-size: var(--media-h1);
   }
 
   h1 {
@@ -379,14 +383,18 @@ td {
   }
 }
 
-@media all and (min-width: 0px) and (max-width: 760px) {
-
+@media all and (min-width: 0) and (max-width: 760px) {
   h1 {
     font-size: var(--media-h1);
   }
 
   /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -413,9 +421,10 @@ td {
     font-size: var(--media-font);
   }
 
-  td:before {
+  td::before {
     /* Now like a table header */
     position: absolute;
+
     /* Top/left values mimic padding */
     top: 6px;
     left: 6px;
@@ -426,11 +435,11 @@ td {
     font-size: var(--media-font);
   }
 
-  /*data label for smaller screens*/
-  td:nth-of-type(1):before { content: attr(data-label); }
-  td:nth-of-type(2):before { content: attr(data-label); }
-  td:nth-of-type(3):before { content: attr(data-label); }
-  td:nth-of-type(4):before { content: attr(data-label); }
+  /* data label for smaller screens */
+  td:nth-of-type(1)::before { content: attr(data-label); }
+  td:nth-of-type(2)::before { content: attr(data-label); }
+  td:nth-of-type(3)::before { content: attr(data-label); }
+  td:nth-of-type(4)::before { content: attr(data-label); }
 
   .table-container {
     margin-left: 20px;
@@ -439,8 +448,8 @@ td {
 }
 
 @media all and (min-width: 0) and (max-width: 760px),
-(min-device-width: 0px) and (max-device-width: 760px) {
-  /*reduce intro text on font size on about page to 12px on smaller screens*/
+  (min-device-width: 0) and (max-device-width: 760px) {
+  /* reduce intro text on font size on about page to 12px on smaller screens */
   .introduction {
     width: 100%;
     font-size: var(--media-font);
@@ -451,11 +460,11 @@ td {
   }
 }
 
-@media all and (min-width: 0px) and (max-width: 760px) {
+@media all and (min-width: 0) and (max-width: 760px) {
   /* rules for Home page - profile pic and profile text */
   .profile__portrait {
     width: 160px;
-    margin: auto auto 20px auto;
+    margin: auto auto 20px;
     border-radius: 50%;
     text-align: center;
   }
@@ -473,8 +482,7 @@ td {
   }
 }
 
-@media all and (max-width:760px) {
-
+@media all and (max-width: 760px) {
   .profile {
     text-align: center;
   }
@@ -485,14 +493,13 @@ td {
 }
 
 @media screen and (min-width: 0) and (max-width: 700px) {
-
   .contact-page {
     height: 100%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-    margin-top: 50px;
+    top: 50px;
     text-align: center;
     font-size: var(--media-font);
   }
@@ -509,10 +516,7 @@ td {
     display: flex;
     width: 100%;
     height: 90px;
-    padding-left: 0;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 10px 10px 0;
     margin-bottom: 10px;
     margin-top: 0;
     background-color: var(--header-footer-color);
