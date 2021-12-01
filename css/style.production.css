@@ -39,13 +39,13 @@ h1 {
 }
 
 h2 {
-  font-size: var(h2-size);
-  font-weight: var(h2-weight);
+  font-size: 24px;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: var(h3-size);
-  font-weight: var(h3-weight);
+  font-size: 18px;
+  font-weight: 700px;
 }
 
 a {
@@ -54,7 +54,7 @@ a {
 }
 
 a:visited {
-  color: #05676e;
+  color: black;
 }
 
 a:hover {
@@ -75,6 +75,7 @@ a:hover {
 
 a:active {
   color: #05676e;
+  text-decoration: none;
 }
 
 button {
@@ -136,6 +137,7 @@ button:focus,
   border-bottom: 2px solid black;
   background-color: white;
   position: fixed;
+  z-index: 1;
 }
 
 .page-header__item {
@@ -252,8 +254,8 @@ td {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 30px;
-  -webkit-text-decoration-color: var(button-text-color);
-  text-decoration-color: var(button-text-color);
+  -webkit-text-decoration-color: undefined;
+  text-decoration-color: undefined;
 }
 
 .display-image {
@@ -473,7 +475,12 @@ td {
   }
 
   /* Force table to not be like tables anymore */
-  table thead tbody th td tr {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -526,8 +533,7 @@ td {
   }
 }
 
-@media all and (min-width: 0) and (max-width: 760px),
-  (min-device-width: 0) and (max-device-width: 760px) {
+@media all and (min-width: 0) and (max-width: 760px) {
   /* reduce intro text on font size on about page to 12px on smaller screens */
   .introduction {
     width: 100%;
