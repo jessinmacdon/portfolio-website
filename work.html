@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My skills and projects</title>
     <link rel="shortcut icon" type="image/png" href="img/tittle-image.png">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
   </head>
+
   <body>
     <header class="page-header">
-      <img src="img/logo.svg" class="page-header__item" id="logo-desktop" alt="logo with name Macdon Jessin in block letters." width="250" height="70">
-      <img src="img/logo-small.svg" class="page-header__item" id="logo-mobile" alt="logo which is a picture of a screw bar" width="100" height="70">
+      <img src="img/logo.svg" class="page-header__item" id="logo-desktop"
+        alt="logo with name Macdon Jessin in block letters." width="250" height="70">
+      <img src="img/logo-small.svg" class="page-header__item" id="logo-mobile"
+        alt="logo which is a picture of a screw bar" width="100" height="70">
       <nav class="page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -38,67 +45,97 @@
       </div>
       <section>
         <div class="grid">
-          <div class="grid__item">
-            <h2>Web app development</h2>
+          <div class="grid__item pokemon-app-grid">
+            <h2>Pokedex App</h2>
             <p>
-              For this project I developed a webpage using HTML.
+              A simple pokemon Library (Pokedex) that loads pokemon data from an external api and displays it on a
+              pokemon app build using JavaScript, HTML, CSS, jquery and bootstrap
             </p>
-            <a href="#" aria-label="Follow this link to learn more about what this project was about and my role in the project">Learn more about this project</a>
+            <a href="https://github.com/jessinmacdon/pokedex-app"
+              aria-label="Follow this link to learn more about what this project was about and my role in the project"
+              target="_blank">Learn more on Github</a>
+          </div>
+          <div class="grid__item myflix_api-grid">
+            <h2>MyFlix App (A movie API)</h2>
+            <p>
+              MyFlix is an API that gives the user access to information about movies. It includes infromation mainly
+              about the movie's description, genre, directors and actors. In order to access this information, you would
+              have to create a user account (register) and login.
+            </p>
+            <a href="https://github.com/jessinmacdon/movie_api"
+              aria-label="Follow this link to learn more about what this project was about and my role in the project"
+              target="_blank">Learn more on Github</a>
           </div>
           <div class="grid__item">
-            <h2>Portfolio website</h2>
+            <h2>Movie App (React)</h2>
             <p>
-              A portfolio website designed and build using advanced HTML and CSS.
+              This is the second part of the MYFLIX API project. Using React, I built the client-side for an application
+              called myFlix based on its existing server-side code (REST API and database).
             </p>
-            <a href="#" aria-label="Follow this link to learn more about what this project was about and my role in the project">Learn more about this project</a>
+            <a href="https://github.com/jessinmacdon/myFlix-client"
+              aria-label="Follow this link to learn more about what this project was about and my role in the project"
+              target="_blank">Learn more on Github</a>
           </div>
-          <div class="grid__item">
-            <h2>Website Styling</h2>
+          <div class="grid__item meet-app-box">
+            <img src="img/meet-app.png" class="meet-app-screenshot" id="meet-app-image"
+              alt="picture of the look and feel of meet app" width="300" height="180">
+            <h2>Meet App</h2>
             <p>
-              Styling a webpage using advanced CSS and employing pre and postprocessors.
+              A serverles, progressive web app (PWA) that fetches data from Google's Calendar API and displays them in a
+              react application. The app was built follwoing a test-driven development (TDD) approach, using a cloud
+              based server with OAuth2 to authenticate users on the app. The app is a Progressive web app which enables
+              the web app to behave like a native app. It also allows users to browse and events even when offline.
             </p>
-            <a href="#" aria-label="Follow this link to learn more about what this project was about and my role in the project">LLearn more about this project</a>
-          </div>
-          <div class="grid__item">
-            <h2>Web and mobile app development</h2>
-            <p>
-              Developing a car rental mobile app on Android.
-            </p>
-            <a href="#" aria-label="Follow this link to learn more about what this project was about and my role in the project">Learn more about this project</a>
+            <a href="https://github.com/jessinmacdon/meet"
+              aria-label="Follow this link to learn more about what this project was about and my role in the project"
+              target="_blank">Learn
+              more on Github</a>
+            <br>
+            <a href="https://jessinmacdon.github.io/meet"
+              aria-label="Follow this link to check out the live version on gh-pages" target="_blank">Go to App</a>
           </div>
           <div class="grid__item">
             <h2>Mobile app development</h2>
             <p>
               Developinig a doctor appointment booking platform on Android and iOS.
             </p>
-            <a href="#" aria-label="Follow this link to learn more about what this project was about and my role in the project">Learn more about this project</a>
+            <a href="#"
+              aria-label="Follow this link to learn more about what this project was about and my role in the project">Learn
+              more about this project</a>
           </div>
           <div class="grid__item">
-            <h2>Web development</h2>
+            <h2>To-do list miniproject</h2>
             <p>
-              Frontend development for a portfolio website to showcase different web projects and skills, based on HTML, CSS and JavaScript.
+              I used jquery and css to build a small to-do list app which allows users to perform simple atsks like
+              adding and deleting items, marking items as done and sorting (reordering) the list items.
             </p>
-            <a href="#" aria-label="Follow this link to learn more about what this project was about and my role in the project">Learn more about this project</a>
+            <a href="https://github.com/jessinmacdon/to-do-list-app"
+              aria-label="Follow this link to learn more about what this project was about and my role in the project"
+              target="_blank">Learn more on Github</a>
           </div>
         </div>
-    </section>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__item">
         <p>Find me on</p>
       </div>
       <div class="footer__item">
-        <a href="https://twitter.com/jessinmacdon" class="social-media__link" target="_blank" aria-label="get to know more about my interest and tweets">
+        <a href="https://twitter.com/jessinmacdon" class="social-media__link" target="_blank"
+          aria-label="get to know more about my interest and tweets">
           <img src="img/twitter-icon.svg" alt="twitter" width="30" height="30">
         </a>
-        <a href="https://www.xing.com/profile/Jessin_Macdon/cv" class="social-media__link" target="_blank" aria-label="click here to have a look at my Xing.de profile">
+        <a href="https://www.xing.com/profile/Jessin_Macdon/cv" class="social-media__link" target="_blank"
+          aria-label="click here to have a look at my Xing.de profile">
           <img src="img/xing-icon.svg" alt="Xing" width="30" height="30">
         </a>
-        <a href="https://www.linkedin.com/in/jessinmacdon" class="social-media__link" target="_blank" aria-label="click here to have a look at my LinkedIn profile">
+        <a href="https://www.linkedin.com/in/jessinmacdon" class="social-media__link" target="_blank"
+          aria-label="click here to have a look at my LinkedIn profile">
           <img src="img/linkedin-icon.svg" alt="LinkedIn" width="30" height="30">
         </a>
       </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
   </body>
+
 </html>
