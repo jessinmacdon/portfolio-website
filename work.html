@@ -1,141 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My skills and projects</title>
-    <link rel="shortcut icon" type="image/png" href="img/tittle-image.png">
-    <link rel="stylesheet" type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My skills and projects</title>
+        <link rel="shortcut icon" type="image/png" href="img/tittle-image.png">
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    </head>
 
-  <body>
-    <header class="page-header">
-      <img src="img/logo.svg" class="page-header__item" id="logo-desktop"
-        alt="logo with name Macdon Jessin in block letters." width="250" height="70">
-      <img src="img/logo-small.svg" class="page-header__item" id="logo-mobile"
-        alt="logo which is a picture of a screw bar" width="100" height="70">
-      <nav class="page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list_item navigation-list__item--active">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item--active">Work</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="portfolio-grid">
-      <div class="grid-heading">
-        <h1 class="grid-heading__item">MY WORK</h1>
-      </div>
-      <section>
-        <div class="grid">
-          <div class="grid__item pokemon-app-grid">
-            <h2>Pokedex App</h2>
-            <p>
-              A simple pokemon Library (Pokedex) that loads pokemon data from an external api and displays it on a
-              pokemon app build using JavaScript, HTML, CSS, jquery and bootstrap
-            </p>
-            <a href="https://github.com/jessinmacdon/pokedex-app"
-              aria-label="Follow this link to learn more about what this project was about and my role in the project"
-              target="_blank">Learn more on Github</a>
-          </div>
-          <div class="grid__item myflix_api-grid">
-            <h2>MyFlix App (A movie API)</h2>
-            <p>
-              MyFlix is an API that gives the user access to information about movies. It includes infromation mainly
-              about the movie's description, genre, directors and actors. In order to access this information, you would
-              have to create a user account (register) and login.
-            </p>
-            <a href="https://github.com/jessinmacdon/movie_api"
-              aria-label="Follow this link to learn more about what this project was about and my role in the project"
-              target="_blank">Learn more on Github</a>
-          </div>
-          <div class="grid__item">
-            <h2>Movie App (React)</h2>
-            <p>
-              This is the second part of the MYFLIX API project. Using React, I built the client-side for an application
-              called myFlix based on its existing server-side code (REST API and database).
-            </p>
-            <a href="https://github.com/jessinmacdon/myFlix-client"
-              aria-label="Follow this link to learn more about what this project was about and my role in the project"
-              target="_blank">Learn more on Github</a>
-          </div>
-          <div class="grid__item meet-app-box">
-            <img src="img/meet-app.png" class="meet-app-screenshot" id="meet-app-image"
-              alt="picture of the look and feel of meet app" width="300" height="180">
-            <h2>Meet App</h2>
-            <p>
-              A serverles, progressive web app (PWA) that fetches data from Google's Calendar API and displays them in a
-              react application. The app was built follwoing a test-driven development (TDD) approach, using a cloud
-              based server with OAuth2 to authenticate users on the app. The app is a Progressive web app which enables
-              the web app to behave like a native app. It also allows users to browse and events even when offline.
-            </p>
-            <a href="https://github.com/jessinmacdon/meet"
-              aria-label="Follow this link to learn more about what this project was about and my role in the project"
-              target="_blank">Learn
-              more on Github</a>
-            <br>
-            <a href="https://jessinmacdon.github.io/meet"
-              aria-label="Follow this link to check out the live version on gh-pages" target="_blank">Go to App</a>
-          </div>
-          <div class="grid__item">
-            <h2>Mobile app development</h2>
-            <p>
-              Developinig a doctor appointment booking platform on Android and iOS.
-            </p>
-            <a href="#"
-              aria-label="Follow this link to learn more about what this project was about and my role in the project">Learn
-              more about this project</a>
-          </div>
-          <div class="grid__item">
-            <h2>To-do list miniproject</h2>
-            <p>
-              I used jquery and css to build a small to-do list app which allows users to perform simple atsks like
-              adding and deleting items, marking items as done and sorting (reordering) the list items.
-            </p>
-            <a href="https://github.com/jessinmacdon/to-do-list-app"
-              aria-label="Follow this link to learn more about what this project was about and my role in the project"
-              target="_blank">Learn more on Github</a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__item">
-        <p>Find me on</p>
-      </div>
-      <div class="footer__item">
-        <a href="https://twitter.com/jessinmacdon" class="social-media__link" target="_blank"
-          aria-label="get to know more about my interest and tweets">
-          <img src="img/twitter-icon.svg" alt="twitter" width="30" height="30">
-        </a>
-        <a href="https://www.xing.com/profile/Jessin_Macdon/cv" class="social-media__link" target="_blank"
-          aria-label="click here to have a look at my Xing.de profile">
-          <img src="img/xing-icon.svg" alt="Xing" width="30" height="30">
-        </a>
-        <a href="https://www.linkedin.com/in/jessinmacdon" class="social-media__link" target="_blank"
-          aria-label="click here to have a look at my LinkedIn profile">
-          <img src="img/linkedin-icon.svg" alt="LinkedIn" width="30" height="30">
-        </a>
-      </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
-  </body>
+    <body>
+
+        <header class="page-header">
+            <div class="nav-container">
+                <nav class="navbar navbar-expand-md bg-black fixed-top ">
+                    <a class="navbar-brand btn bg-white" href="index.html">
+                        <span class="d-inline-block align-top logo-text">
+                            <span class="logo-text">&lt;</span>
+                            jessinMacdon /
+                            <span class="logo-text">&gt;</span>
+                        </span>
+                    </a>
+                    <button class="navbar-toggler custom-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#toggleMobileMenu" aria-controls="#toggleMobileMenu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                        <ul class="nav nav-pills nav-justified ms-auto" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="a-link" aria-current="page" href="index.html">
+                                    <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">
+                                        Home
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="a-link" aria-current="page" href="about.html"
+                                    aria-label="click here to learn more about me">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">
+                                        About
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="a-link" aria-current="page" href="work.html">
+                                    <button class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">
+                                        Projects
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="a-link" aria-current="page" href="contact.html">
+                                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-disabled" type="button" role="tab"
+                                        aria-controls="pills-disabled" aria-selected="false">
+                                        Contact
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0"></div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0"></div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab" tabindex="0"></div>
+                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                                aria-labelledby="pills-disabled-tab" tabindex="0"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="projects-heading">
+                <h1 class="projects-heading-h1">Work</h1>
+            </div>
+            <div class="project-list">
+                <div class="project-list__item">
+                    <h2>The Meet app (PWA)</h2>
+                    <img class="project-list__img" alt="image of the use interface of the app" src="img/meet-app.png"
+                        alt="image of the use interface of the meet app" height="200" width="300">
+                    <p>A progressive web application (PWA), which uses the Google Calendar API
+                        to fetch upcoming events around the world. This data is then presented on a neat looking
+                        interface built
+                        with ReactJS following a test driven development approach (technique).
+                    </p>
+                    <ul class="tool-list">
+                        <li class="list-item">
+                            Enzyme</li>
+                        <li class="list-item">
+                            Recharts</li>
+                        <li class="list-item">
+                            Puppeteer</li>
+                        <li class="list-item">
+                            Jest-Cucumber</li>
+                    </ul>
+                    <div class="project-list__btn">
+                        <a href="https://jessinmacdon.github.io/meet" target="_blank" class="btn btn-primary">To Live
+                            Demo</a>
+                        <a href="https://github.com/jessinmacdon/meet.git" target="_blank" class="btn btn-primary">To
+                            GitHub
+                            Repo</a>
+                    </div>
+                </div>
+                <div class="project-list__item">
+                    <h2>Pokemon Library (pokedex)</h2>
+                    <img class="project-list__img" alt="image of the use interface of the app" src="img/poklib-app.png"
+                        alt="image of the use interface of the app" height="200" width="300">
+                    <p>This is a simple Pokédex application that loads a list of 150 pokemons with a few
+                        other details like the height, weight, image and types.</p>
+                    <ul class="tool-list">
+                        <li class="list-item">
+                            JavaScript</li>
+                        <li class="list-item">
+                            HTML5/CSS</li>
+                        <li class="list-item">
+                            jquery</li>
+                        <li class="list-item">
+                            Bootstrap</li>
+                    </ul>
+                    <div class="project-list__btn">
+                        <a href="https://jessinmacdon.github.io/pokedex-app/" target="_blank" class="btn btn-primary">To
+                            Live
+                            Demo</a>
+                        <a href="https://github.com/jessinmacdon/pokedex-app.git" target="_blank"
+                            class="btn btn-primary">To
+                            GitHub
+                            Repo</a>
+                    </div>
+                </div>
+                <div class="project-list__item">
+                    <h2>Simple TO-DO list App</h2>
+                    <img class="m-project-list__img" src="img/todo-list-app.jpg" height="300px" width="160px"
+                        alt="a screenshot showing the home page of the to-do list app">
+                    <p>A mini-project making use of jquery to build a to-do list app. Users can add new items, strike
+                        out items,
+                        sort
+                        through items and of course delete items from their list.</p>
+                    <ul class="tool-list">
+                        <li class="list-item">
+                            jquery</li>
+                        <li class="list-item">
+                            HTML5/CSS</li>
+                    </ul>
+                    <div class="project-list__btn">
+                        <a href="https://jessinmacdon.github.io/to-do-list-app/" target="_blank"
+                            class="btn btn-primary">To
+                            Live
+                            Demo
+                        </a>
+                        <a href="https://github.com/jessinmacdon/to-do-list-app.git" target="_blank"
+                            class="btn btn-primary">To
+                            GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="project-list__item">
+                    <h2>myFlix Movie API</h2>
+                    <p>a movie API that gives the user access to information about movies. It includes
+                        information mainly about the movie's description, genre and director(s). In order to access this
+                        information, you would have to create a user account (register) and login.</p>
+                    <ul class="tool-list">
+                        <li class="list-item">
+                            nodeJS</li>
+                        <li class="list-item">
+                            MongoDB</li>
+                        <li class="list-item">
+                            JavaScript</li>
+                        <li class="list-item">
+                            Express</li>
+                    </ul>
+                    <div class="project-list__btn">
+                        <a href="https://github.com/jessinmacdon/movie_api.git" target="_blank"
+                            class="btn btn-primary">To
+                            GitHub
+                            Repo</a>
+                    </div>
+                </div>
+                <div class="project-list__item">
+                    <h2>myFlix Client (React App)</h2>
+                    <img class="m-project-list__img" height="300px" width="160px"
+                        alt="screenshot of the user interface of the app" src="img/myflix-client.png">
+                    <p>This client the front-end of the myFlix application. It provide users with access to
+                        information about different movies, directors, actors and genres. Users will be able to sign up,
+                        update
+                        their personal information, and create a list of their favourite movies.</p>
+                    <ul class="tool-list">
+                        <li class="list-item">
+                            ReactJS</li>
+                        <li class="list-item">
+                            Parcel</li>
+                        <li class="list-item">
+                            Node</li>
+                    </ul>
+                    <div class="project-list__btn">
+                        <a href="https://github.com/jessinmacdon/myFlix-client.git" target="_blank"
+                            class="btn btn-primary">To
+                            GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="project-list__item">
+                    <h2>myFlix-Angular-Client</h2>
+                    <img class="project-list__img" alt="image of the use interface of the app" src="img/angular-app.png"
+                        height="200" width="300">
+                    <p>For this project, I revisited the myFlix movie API I built some time ago. Using
+                        Angular to build a client App pulling data from the myFlixDB through API calls.</p>
+                    <ul class="tool-list">
+                        <li class="list-item">
+                            Angular</li>
+                        <li class="list-item">
+                            TypeScript</li>
+                    </ul>
+                    <div class="project-list__btn">
+                        <a href="https://jessinmacdon.github.io/myFlix-App/welcome" target="_blank"
+                            class="btn btn-primary">To Live
+                            Demo
+                        </a>
+                        <a href="https://github.com/jessinmacdon/myFlix-App.git" target="_blank"
+                            class="btn btn-primary">To
+                            GitHub
+                            Repo</a>
+                    </div>
+                </div>
+                <div class="project-list__item">
+                    <h2>Chat App</h2>
+                    <img class="m-project-list__img" alt="image of the use interface of the app" src="img/chat-app.jpeg"
+                        height="300px" width="160px">
+                    <p>This app provides users with a simple interface that enables users to send and
+                        receive texts messages, images and share their location within a chat room.</p>
+                    <ul class="tool-list">
+                        <li class="list-item">
+                            React Native</li>
+                        <li class="list-item">
+                            Expo</li>
+                        <li class="list-item">
+                            Firebase</li>
+                        <li class="list-item">
+                            Gifted Chat</li>
+                    </ul>
+                    <div class="project-list__btn">
+                        <a href="https://github.com/jessinmacdon/chat-app.git" target="_blank"
+                            class="btn btn-primary">To
+                            GitHub
+                            Repo</a>
+                    </div>
+                </div>
+                <!-- Grid items will live here -->
+            </div>
+        </main>
+        <footer class="bg-black text-center text-white footer">
+            <div class="container p-1 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+
+                    <!-- Twitter -->
+                    <a class="btn btn-floating m-1" href="https://twitter.com/jessinmacdon" role="button"
+                        target="_blank" aria-label="get to know more about my interest and tweets"><i
+                            class="fab fa-twitter">
+                            <img src="img/twitter-icon.svg" alt="twitter" width="40" height="40"
+                                style="border-radius: 50%;">
+                        </i></a>
+
+                    <!-- Xing -->
+                    <a class="btn  btn-floating m-1" href="https://www.xing.com/profile/Jessin_Macdon/cv"
+                        target="_blank" role="button"><i class="fab fa-instagram"></i>
+                        <img src="img/xing-icon.svg" alt="Xing" width="40" height="40" style="border-radius: 50%;"></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-floating m-1" href="https://www.linkedin.com/in/jessinmacdon" target="_blank"
+                        role="button"><i class="fab fa-linkedin-in"></i>
+                        <img src="img/linkedin-icon.svg" alt="LinkedIn" width="40" height="40"
+                            style="border-radius: 50%;"></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-floating m-1" href="https://www.github.com/jessinmacdon" role="button"
+                        target="_blank"><i class="fab fa-github"></i>
+                        <img src="img/github-icon.svg" alt="LinkedIn" width="40" height="40"
+                            style="border-radius: 50%; background-color: white;">
+                    </a>
+                </section>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
+        <script src="js/tota11y.min.js"></script>
+    </body>
 
 </html>

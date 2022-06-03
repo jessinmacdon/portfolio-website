@@ -1,4 +1,4 @@
-(function() {
+(function () {
   let form = document.querySelector('#contactform');
   let emailInput = document.querySelector('#contact-email');
   let phoneInput = document.querySelector('#telephone-number');
@@ -11,7 +11,7 @@
       container.appendChild(error);
     }
 
-    if(message) {
+    if (message) {
       let erro = document.createElement('div');
       error.classList.add('error-message');
       error.innerText = message;
@@ -27,7 +27,7 @@
       return false;
     }
 
-    if(value.indexof('@') === -1) {
+    if (value.indexof('@') === -1) {
       showErrorMessage(emailInput, 'Enter a valid Email address');
       return false;
     }
@@ -60,12 +60,12 @@
     return isValidEmail && isValidPhoneNumber;
   }
 
-  //Stop default behavoir, form will not be submited to the server
+  //Stop default behavior, form will not be submitted to the server
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      alert('Your request has been submited successfully. I will be getting back to you shortly.');
+      alert('Your request has been submitted successfully. I will be getting back to you shortly.');
     }
   });
 
