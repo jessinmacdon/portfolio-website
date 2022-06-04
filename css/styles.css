@@ -475,7 +475,7 @@ main {
   align-items: center;
   width: 700px;
   min-height: 100%;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 10%;
   color: black;
   background-color: white;
@@ -655,7 +655,7 @@ main {
   .contact-page {
     height: 100%;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 100px;
     margin-left: 10px;
     margin-right: 10px;
@@ -766,6 +766,10 @@ main {
   .introduction {
     /* introductory text - about me page */
     width: 300px;
+  }
+
+  .home-info-container {
+    margin-top: 140px;
   }
 
   .download-cv {
