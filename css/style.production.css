@@ -34,6 +34,7 @@ a:active color: #489c79;
   --h3-weight: 700px;
   --a-color: #533419;
   --a-visited: #05676e;
+  --nav-active: black;
   --a-active: black;
   --a-hover: #6a0dad;
   --thead-color: #9a60ff;
@@ -65,13 +66,13 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 700px;
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
 }
 
 a {
@@ -80,7 +81,7 @@ a {
 }
 
 a:visited {
-  color: var(--a-visited);
+  color: var(--nav-active);
 }
 
 a:hover,
@@ -94,6 +95,7 @@ a:hover,
 
 a:active {
   color: var(--a-visited);
+  text-decoration: none;
 }
 
 button,
@@ -202,9 +204,9 @@ main {
   max-width: 300px;
   height: auto;
   margin-right: 50px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(11, 110, 253, 0.5);
-          box-shadow: 0px 0px 10px 10px rgba(11, 110, 253, 0.5);
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(11, 110, 253, 0.5);
+          box-shadow: 0px 0px 5px 5px rgba(11, 110, 253, 0.5);
 }
 
 .profile {
@@ -601,7 +603,7 @@ main {
   }
 }
 /* projects page styling live above this line */
-@media all and (min-width: 0) and (max-width: 760px), (min-device-width: 0) and (max-device-width: 760px) {
+@media all and (min-width: 0) and (max-width: 760px) {
   /* reduce intro text on font size on about page to 12px on smaller screens */
   h1 {
     font-size: var(--media-h1);
@@ -656,6 +658,7 @@ main {
     width: 100%;
     margin-top: 120px;
     margin-bottom: 100px;
+    margin-left: 10px;
     margin-right: 10px;
     top: 50px;
     text-align: center;
